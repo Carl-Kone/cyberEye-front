@@ -1,0 +1,30 @@
+.card {
+    border: 0cm;
+    border-radius: 0;
+    width: 100%;
+    background-color: var(--secondary-grey);
+}
+
+.h4 {
+    color: var(--primary-yellow);
+}
+
+.card {
+    align-items: center;
+}
+
+.nav {
+    background-color: var(--primary-grey);
+    padding-top: 1rem;
+}
+
+.nav-link {
+    color: #ffffff;
+    padding-left: 1.5rem;
+    padding-right: 1rem;
+}
+
+.active-item {
+    background-color: var(--secondary-grey);
+    color: var(--primary-yellow);
+}

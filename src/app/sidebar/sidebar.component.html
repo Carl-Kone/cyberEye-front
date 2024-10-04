@@ -1,0 +1,14 @@
+<div class="card">
+    <div class="card-body">
+        <span class="h4">CYBEREYE</span>
+    </div>
+</div>
+
+<nav class="nav flex-column vh-100">
+    <!-- Loop through menu items -->
+    <a class="nav-link" *ngFor="let item of menu; let i = index" [href]="item.link"
+        [ngClass]="{'active-item': selectedItemIndex === i}" 
+        (click)="selectItem(i)">
+            {{ item.name }}
+    </a>
+</nav>
