@@ -19,3 +19,11 @@ nav {
 #profile_name {
     color: rgba(255,255,255,0.55);
 }
+
+#icon:hover {
+    background-color: rgba(0,0,0,0.85); /* Adjust the highlight color as needed */
+  }
+  
+  #icon:hover #profile_name {
+    color: #d4af37;
+  }
