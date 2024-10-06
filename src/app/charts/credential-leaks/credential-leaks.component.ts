@@ -81,8 +81,8 @@ export class CredentialLeaksComponent implements OnInit {
         passwordLeak: d3.NumberValue; 
       }) => rScale(+d.emailLeak + +d.passwordLeak))  // Use the number of leaks to size the circles
       .attr("fill", "#5b93c2")
-      .attr("stroke", "#000")
-      .attr("stroke-width", 1)
+      .attr("stroke", "#fff")
+      .attr("stroke-width", .5)
       .style("opacity", 0.7)
       .on("mouseover", (event: { pageX: number; pageY: number; }, d: { emailLeak: number; passwordLeak: number }) => {
         tooltip.transition()

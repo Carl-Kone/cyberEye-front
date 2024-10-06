@@ -61,7 +61,7 @@ export class AllExpiredComponent implements OnInit {
       .attr("x2", (d: any, i: number) => rScale(this.maxValue * 1.1) * Math.sin(i * angleSlice))
       .attr("y2", (d: any, i: number) => rScale(this.maxValue * 1.1) * Math.cos(i * angleSlice))
       .attr("class", "line")
-      .style("stroke", "black")
+      .style("stroke", "white")
       .style("stroke-width", "2px");
 
     // Add labels for each axis
@@ -74,6 +74,7 @@ export class AllExpiredComponent implements OnInit {
       .attr("text-anchor", "middle")
       .attr("dy", "0.35em")
       .style("font-size", "12px")
+      .style("fill", "white")
       .text((d: any) => d);
 
     // Map the data for the radar areas
